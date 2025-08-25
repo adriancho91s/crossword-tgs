@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crucigrama - Teoría General de Sistemas</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧩 Crucigrama TGS</h1>
+            <p>Teoría General de Sistemas - Conceptos Fundamentales</p>
+        </div>
+
+        <div class="main-content">
+            <div class="crossword-container">
+                <div class="crossword-grid" id="crosswordGrid"></div>
+                
+                <div class="controls">
+                    <button class="btn btn-primary" onclick="checkAnswers()">Verificar Respuestas</button>
+                    <button class="btn btn-secondary" onclick="clearGrid()">Limpiar</button>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span id="progressText">Progreso: 0/20 palabras completadas</span>
+                </div>
+            </div>
+
+            <div class="clues-container">
+                <div class="clues-section">
+                    <h3>🔄 Horizontales</h3>
+                    <div id="horizontalClues">
+                        <div class="clue">
+                            <span class="clue-number">1.</span>
+                            <span class="clue-text">Conjunto de elementos interrelacionados que persiguen un objetivo común</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">3.</span>
+                            <span class="clue-text">Todo lo que rodea al sistema y está fuera de sus fronteras</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">5.</span>
+                            <span class="clue-text">Capacidad para realizar trabajo o generar cambio</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">7.</span>
+                            <span class="clue-text">Medida del desorden o falta de información en un sistema</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">9.</span>
+                            <span class="clue-text">Resultado que el sistema exporta a su ambiente</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">11.</span>
+                            <span class="clue-text">Mecanismo donde la salida regresa como entrada para control</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">13.</span>
+                            <span class="clue-text">Propiedad emergente donde 2+2=5</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">15.</span>
+                            <span class="clue-text">Capacidad de mantenerse y adaptarse en el tiempo</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">17.</span>
+                            <span class="clue-text">Enfoque que estudia solo entradas y salidas</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">19.</span>
+                            <span class="clue-text">Estado donde las fuerzas se balancean sin cambio neto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clues-section">
+                    <h3>⬇️ Verticales</h3>
+                    <div id="verticalClues">
+                        <div class="clue">
+                            <span class="clue-number">2.</span>
+                            <span class="clue-text">Recursos que el sistema recibe del ambiente</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">4.</span>
+                            <span class="clue-text">Línea que separa el sistema de su ambiente</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">6.</span>
+                            <span class="clue-text">Surgimiento de propiedades no presentes en elementos individuales</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">8.</span>
+                            <span class="clue-text">Capacidad de autorregulación y equilibrio dinámico</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">10.</span>
+                            <span class="clue-text">Características que definen los elementos del sistema</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">12.</span>
+                            <span class="clue-text">Vínculos e interacciones entre elementos del sistema</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">14.</span>
+                            <span class="clue-text">Tendencia a organizarse y aumentar el orden</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">16.</span>
+                            <span class="clue-text">Grado de intercambio a través de las fronteras</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">18.</span>
+                            <span class="clue-text">Representación simplificada de la realidad</span>
+                        </div>
+                        <div class="clue">
+                            <span class="clue-number">20.</span>
+                            <span class="clue-text">Partes fundamentales que constituyen el sistema</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/crossword.js"></script>
+</body>
+</html>
